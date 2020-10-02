@@ -1,10 +1,11 @@
 "use strict";
 
 class Packman {
-  constructor(mouth, xPos, yPos) {
+  constructor(mouth, xPos, yPos, stage) {
     this.mouth = mouth;
     this.xPos = xPos;
     this.yPos = yPos;
+    this.stage = stage;
   }
 
   render() {
@@ -49,6 +50,11 @@ class Packman {
       newY++;
     }
 
+    const isThereEntity = this.stage.collisionDetection(newX, newY)
+    if (isThereEntity !== null) {
+        return;
+    }
+
     // entity cannot leave borders of the stage
     if (newX >= 0 && newX < stage.width) {
       this.xPos = newX;
@@ -56,6 +62,7 @@ class Packman {
     if (newY >= 0 && newY < stage.height) {
       this.yPos = newY;
     }
+
     this.update();
   }
 }
