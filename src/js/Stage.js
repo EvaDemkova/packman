@@ -8,7 +8,6 @@ class Stage {
     const elm = document.createElement("div");
     elm.className = "stage";
     return elm;
-
   }
   mount(parent) {
     this.element = this.render();
@@ -21,12 +20,16 @@ class Stage {
   }
 
   collisionDetection(x, y) {
-    for(let i = 0; i < this.entities.length; i++) {
+    for (let i = 0; i < this.entities.length; i++) {
       if (this.entities[i].xPos === x && this.entities[i].yPos === y) {
         return this.entities[i];
-      } else {
-        return null;
       }
     }
+    return null;
+  }
+  removeEntity(entity) {
+    entity.unmount();
+    const toBeRemoved = this.entities.indexOf(entity);
+    this.entities.splice(toBeRemoved, 1);
   }
 }
