@@ -20,9 +20,9 @@ body {
 }
 
 .stage {
-  width: 1020px;
-  height: 510px;
-  background-image: url('/img/tile.png');
+  // width: 1020px;
+  // height: 510px;
+  background-image: url("/img/tile.png");
   position: relative;
 }
 
@@ -36,10 +36,13 @@ body {
     font-weight: bold;
     text-align: center;
     padding-top: 65px;
-    user-select: none; 
-    
+    user-select: none;
+
     &--closed {
       background-position-x: 85px;
+    }
+    &--open {
+      background-position-x: 0px;
     }
 
     &--left {
@@ -49,49 +52,57 @@ body {
     &--right {
       background-position-y: 0px;
     }
+
+    &--up {
+      background-position-y: 85px;
+    }
+
+    &--down {
+      background-position-y: -170px;
+    }
   }
 
   &--wall {
-    background-image: url('/img/wall.png');
+    background-image: url("/img/wall.png");
   }
 
   &--apple {
-    background-image: url('/img/apple.png');
+    background-image: url("/img/apple.png");
   }
 
   &--bomb {
-    background-image: url('/img/bomb.png');
+    background-image: url("/img/bomb.png");
   }
 
   &--tomb {
-    background-image: url('/img/tomb.png');
+    background-image: url("/img/tomb.png");
   }
 }
 
 .pacboy {
   &-active-light {
-    background-image: url('/img/pacboy-active-light.png');
+    background-image: url("/img/pacboy-active-light.png");
   }
 
   &-active-medium {
-    background-image: url('/img/pacboy-active-medium.png');
+    background-image: url("/img/pacboy-active-medium.png");
   }
 
   &-active-dark {
-    background-image: url('/img/pacboy-active-dark.png');
+    background-image: url("/img/pacboy-active-dark.png");
   }
 }
 
 .pacgirl {
   &-active-light {
-    background-image: url('/img/pacgirl-active-light.png');
+    background-image: url("/img/pacgirl-active-light.png");
   }
 
   &-active-medium {
-    background-image: url('/img/pacgirl-active-medium.png');
+    background-image: url("/img/pacgirl-active-medium.png");
   }
 
   &-active-dark {
-    background-image: url('/img/pacgirl-active-dark.png');
+    background-image: url("/img/pacgirl-active-dark.png");
   }
 }
