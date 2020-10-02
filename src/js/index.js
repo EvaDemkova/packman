@@ -7,5 +7,5 @@ let positionX = window.innerWidth / 2;
 const tileSize = 85;
 
 const containerElm = document.querySelector('.container');
-const packman = new Packman(true, 150, 150);
+const packman = new Packman('open', 150, 150);
 packman.mount(containerElm);

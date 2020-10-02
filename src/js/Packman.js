@@ -13,8 +13,10 @@ class Packman {
         
         document.addEventListener('keydown', (event) => {
             if(event.code === 'ArrowRight') {
+                this.direction = 'right'
                 this.moveRight();   
             } else if(event.code === 'ArrowLeft') {
+                this.direction = 'left';
                 this.moveLeft();
             }
             this.update();
@@ -30,18 +32,19 @@ class Packman {
     }
 
     update() {
+        this.element.style.left = `${this.xPos}px`;
+        this.element.className = `entity entity--pac pacboy-active-light entity--pac--${this.direction}`
         this.element.classList.toggle('entity--pac--closed');
-        this.element.style.left = `${positionX}px`;
     }
 
     moveRight() {
-        positionX += tileSize;
-    }
+        this.xPos += tileSize;
+    }    
 
     moveLeft() {
-        positionX -= tileSize;
+        this.xPos -= tileSize;
     }
-
+    
 
 }
 

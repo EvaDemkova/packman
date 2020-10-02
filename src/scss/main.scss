@@ -41,6 +41,14 @@ body {
     &--closed {
       background-position-x: 85px;
     }
+
+    &--left {
+      background-position-y: -85px;
+    }
+
+    &--right {
+      background-position-y: 0px;
+    }
   }
 
   &--wall {
