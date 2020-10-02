@@ -65,7 +65,9 @@ class Packman {
         this.score++;
         this.stage.removeEntity(entityNeighbour);
         if (this.score === 10) {
-          alert("You won!!!!");
+          setTimeout(function () {
+            alert("You won!!!!");
+          }, 500);
         }
       }
       if (entityNeighbour.type === "bomb") {
@@ -76,6 +78,9 @@ class Packman {
           this.element.className = "entity entity--tomb";
           this.alive = false;
           this.scoreElm.style.display = "none";
+          setTimeout(function () {
+            alert("You lost!!!!");
+          }, 500);
         }
       }
       //mysli na to!!!!!

@@ -9,14 +9,23 @@ html {
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5em;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  // width: 100vw;
+  // height: 100vh;
 }
 
 .stage {
@@ -24,6 +33,7 @@ body {
   // height: 510px;
   background-image: url("/img/tile.png");
   position: relative;
+  border: 2px solid black;
 }
 
 .entity {
@@ -71,11 +81,27 @@ body {
   }
 
   &--apple {
-    background-image: url("/img/apple.png");
+    background-image: url("https://www.flaticon.com/svg/static/icons/svg/197/197576.svg");
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    margin-left: 15px;
+    margin-top: 15px;
+    background-position: bottom;
+    border-radius: 50%;
+    border: 1px solid gray;
   }
 
   &--bomb {
-    background-image: url("/img/bomb.png");
+    background-image: url("https://www.flaticon.com/svg/static/icons/svg/197/197592.svg");
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    margin-left: 15px;
+    margin-top: 15px;
+    background-position: bottom;
+    border-radius: 50%;
+    border: 10px solid black;
   }
 
   &--tomb {
