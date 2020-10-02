@@ -36,7 +36,11 @@ body {
     font-weight: bold;
     text-align: center;
     padding-top: 65px;
-    user-select: none;    
+    user-select: none; 
+    
+    &--closed {
+      background-position-x: 85px;
+    }
   }
 
   &--wall {
