@@ -1,6 +1,6 @@
 # WELCOME TO CZECHOSLOVAKIAN PACKMAN
 
-Play this game by using arrow keys. The aim is to collect all Czech flags. Be careful, stepping on Slovakia, you have only 50% of surviving. 
+Play this game by using arrow keys. The aim is to collect all Czech flags. Be careful, stepping on Slovakia, you have only 50% chance of surviving. 
 
 Implementation of game:
 - created by pair-programming during Javascript Hackathon of Coding Bootcamp Praha
