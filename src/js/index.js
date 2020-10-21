@@ -4,7 +4,7 @@ console.log("it works!");
 const tileSize = 85;
 
 const containerElm = document.querySelector(".container");
-const stage = new Stage(15, 10);
+const stage = new Stage(10, 10);
 stage.mount(containerElm);
 
 const stageElm = containerElm.querySelector(".stage");
