@@ -81,27 +81,27 @@ h1 {
   }
 
   &--apple {
-    background-image: url("https://www.flaticon.com/svg/static/icons/svg/197/197576.svg");
+    background-image: url("/img/apple.png");
     height: 50px;
     width: 50px;
     background-size: cover;
     margin-left: 15px;
     margin-top: 15px;
     background-position: bottom;
-    border-radius: 50%;
-    border: 1px solid gray;
+    //border-radius: 50%;
+    //border: 1px solid gray;
   }
 
   &--bomb {
-    background-image: url("https://www.flaticon.com/svg/static/icons/svg/197/197592.svg");
+    background-image: url("/img/bomb.png");
     height: 50px;
     width: 50px;
     background-size: cover;
     margin-left: 15px;
     margin-top: 15px;
     background-position: bottom;
-    border-radius: 50%;
-    border: 10px solid black;
+    //border-radius: 50%;
+    //@warn: 10px solid black;
   }
 
   &--tomb {

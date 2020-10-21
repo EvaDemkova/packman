@@ -14,5 +14,29 @@
     <script src="/js/Stage.js"></script>
     <script src="/js/Packman.js"></script>
     <script src="/js/index.js"></script>
+              <!-- The core Firebase JS SDK is always required and must be listed first -->
+          <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+          <!-- TODO: Add SDKs for Firebase products that you want to use
+              https://firebase.google.com/docs/web/setup#available-libraries -->
+          <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+
+          <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+              apiKey: "AIzaSyBYn5frcGB3sRywmf9YR8U78AxgBcpWETc",
+              authDomain: "packman-de94e.firebaseapp.com",
+              databaseURL: "https://packman-de94e.firebaseio.com",
+              projectId: "packman-de94e",
+              storageBucket: "packman-de94e.appspot.com",
+              messagingSenderId: "792649012712",
+              appId: "1:792649012712:web:5099508fd56d31a800005d",
+              measurementId: "G-691ZB1BNKB"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+          </script>
   </body>
 </html>
